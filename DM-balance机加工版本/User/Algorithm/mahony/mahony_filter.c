@@ -117,6 +117,7 @@ void mahony_output(struct MAHONY_FILTER_t *mahony_filter)
 }
 
 // 初始化Mahony滤波器的参数和函数指针
+//1.0f,0.0f,0.001f
 void mahony_init(struct MAHONY_FILTER_t *mahony_filter,float Kp,float Ki,float dt)
 {
     mahony_filter->Kp = Kp;
