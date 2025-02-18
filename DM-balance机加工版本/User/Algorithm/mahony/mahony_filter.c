@@ -60,7 +60,7 @@ void mahony_update(struct MAHONY_FILTER_t *mahony_filter)
 										+mahony_filter->acc.z * mahony_filter->acc.z);
 	
     mahony_filter->acc.x =mahony_filter->acc.x/ normalise;
-	  mahony_filter->acc.y =mahony_filter->acc.y/normalise;   
+	mahony_filter->acc.y =mahony_filter->acc.y/normalise;   
     mahony_filter->acc.z =mahony_filter->acc.z/normalise;
 
     /*加速计读取的方向与重力加速计方向的差值，用向量叉乘计算*/
