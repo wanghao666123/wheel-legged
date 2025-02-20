@@ -100,7 +100,8 @@ void ChassisR_task(void)
 
 void ChassisR_init(chassis_t *chassis,vmc_leg_t *vmc,PidTypeDef *legr)
 {
-  const static float legr_pid[3] = {LEG_PID_KP, LEG_PID_KI,LEG_PID_KD};
+	//!350 0 3000
+  	const static float legr_pid[3] = {LEG_PID_KP, LEG_PID_KI,LEG_PID_KD};
 
 	joint_motor_init(&chassis->joint_motor[0],6,MIT_MODE);//发送id为6
 	joint_motor_init(&chassis->joint_motor[1],8,MIT_MODE);//发送id为8
